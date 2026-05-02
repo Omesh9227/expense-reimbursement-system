@@ -83,9 +83,9 @@ The application follows a **Microservices Architecture**:
 
 ---
 
-```text
-
 ## 📂 Project Structure
+
+```text
 expense-reimbursement-system/
 ├── backend/
 │   ├── auth-service/                # Handles JWT, Login, and Permissions
@@ -130,3 +130,72 @@ expense-reimbursement-system/
 └── README.md
 
 ```
+---
+
+## ▶️ How to Run
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/<your-username>/expense-reimbursement-system.git
+cd expense-reimbursement-system
+```
+
+### 2. Start Services (in order)
+
+- Start **Eureka Server**
+- Start **Auth Service**
+- Start **Employee Service**
+- Start **Expense Service**
+
+### 3. Run Frontend
+
+```text
+cd frontend
+npm install
+npm start
+```
+
+---
+
+## 🔐 API Highlights
+
+### Auth
+- `POST /api/auth/register`
+- `POST /api/auth/login`
+
+### Employees
+- `POST /api/employees`
+- `GET /api/employees`
+
+### Reimbursements
+- `POST /api/reimbursements`
+- `GET /api/reimbursements`
+- `PUT /api/reimbursements/{id}/approve`
+- `PUT /api/reimbursements/{id}/reject`
+
+---
+
+## 📌 Learning Outcomes
+
+- Designed and implemented **microservices architecture**
+- Built **secure APIs using JWT authentication**
+- Implemented **role-based authorization**
+- Learned **inter-service communication**
+- Worked with **PostgreSQL and JPA/Hibernate**
+- Improved **code quality using SonarQube**
+- Built a **real-world workflow system**
+
+---
+
+## 🌟 Future Improvements
+- Add **file upload service for receipts**
+- Implement **notifications (Email/SMS)**
+- Add **Kafka/RabbitMQ for async communication**
+- Deploy on **AWS (EC2, RDS, S3)**
+- Add **CI/CD pipeline**
+
+---
+
+## 👨‍💻 Author
+**Omesh Mandavi**
