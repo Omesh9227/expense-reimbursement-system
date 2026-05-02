@@ -83,6 +83,8 @@ The application follows a **Microservices Architecture**:
 
 ---
 
+```text
+
 ## 📂 Project Structure
 expense-reimbursement-system/
 ├── backend/
